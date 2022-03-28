@@ -9,10 +9,10 @@ class Program
 {
     public static void Main(string[] args)
     {
-  Console.WriteLine("You work 8 hours each day");
-  Console.WriteLine("You make $14 per hour");
-  Console.WriteLine("Your pay will be: $1836 monthly");
-  Console.WriteLine("The government will take: $403.20 monthly.");
-  Console.WriteLine("\nDone.");
+        Console.WriteLine("You work 8 hours each day");
+        Console.WriteLine("You make $14 per hour");
+        Console.WriteLine("Your pay will be: $1836 monthly");
+        Console.WriteLine("The government will take: $403.20 monthly.");
+        Console.WriteLine("\nDone.");
     }
 }
