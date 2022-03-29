@@ -1,7 +1,7 @@
 // Created by: Joanne Santhosh
 // Created on: Mar 2022
 //
-// This program displays, "Salary Program, with JS"
+// This program calculates your salary
 
 using System;
 
@@ -9,10 +9,20 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("You work 8 hours each day");
-        Console.WriteLine("You make $14 per hour");
-        Console.WriteLine("Your pay will be: $1836 monthly");
-        Console.WriteLine("The government will take: $403.20 monthly.");
+        // This program calculates your salary
+        int numberOfHOursWorked;
+        int hourlyRate;
+        Console.WriteLine("This program calculates your salary.");
+        Console.WriteLine("");
+
+        Console.WriteLine("Enter the number of hours worked.");
+        numberOfHOursWorked = (Convert.ToInt32(Console.ReadLine()));
+        Console.Write("Enter the hourly rate.");
+        hourlyRate = (Convert.ToInt32(Console.ReadLine()));
+        Console.WriteLine("");
+        Console.WriteLine("Your take home salary is: $" + (numberOfHOursWorked * hourlyRate) * (1.00 - 0.18));
+        Console.WriteLine("The government will take: $" + 0.18 * (numberOfHOursWorked * hourlyRate));
+      
         Console.WriteLine("\nDone.");
     }
 }
