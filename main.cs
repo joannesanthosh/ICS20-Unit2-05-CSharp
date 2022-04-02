@@ -22,6 +22,8 @@ class Program
         Console.WriteLine("");
         Console.WriteLine("Your take home salary is: $" + (numberOfHOursWorked * hourlyRate) * (1.00 - 0.18));
         Console.WriteLine("The government will take: $" + 0.18 * (numberOfHOursWorked * hourlyRate));
+        numberOfHOursWorked.ToString("0.00"); // returns "0.50"  when decimalVar == 0.5m
+        hourlyRate.ToString("0.00"); // returns "0.50"  when decimalVar == 0.5m
         Console.WriteLine("\nDone.");
     }
 }
